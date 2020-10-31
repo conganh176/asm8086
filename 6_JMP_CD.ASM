@@ -26,4 +26,7 @@ main proc
 
 	main endp
 
+	mov ah, 4Ch
+    int 21h
+
 end main

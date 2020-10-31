@@ -22,6 +22,9 @@ main proc
 	add al, num1 ; num1-num2
 	mov def, al
 
+	mov ah, 4Ch
+    int 21h
+
 main endp
 
 end main

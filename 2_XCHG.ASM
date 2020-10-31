@@ -10,6 +10,9 @@ main proc
 	mov bl, var2
 
 	xchg al, bl
+	
+	mov ah, 4Ch
+    int 21h
 
 main endp
 

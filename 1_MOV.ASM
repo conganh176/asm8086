@@ -6,8 +6,8 @@
         var2 db ?
 .code
 main proc
-		mov ax, @data
-		mov ds, ax
+	mov ax, @data
+	mov ds, ax
 
         mov var2, C
         mov al, var1
@@ -15,6 +15,9 @@ main proc
 
         mov var2, al
         mov var1, ah
+
+        mov ah, 4Ch
+        int 21h
 main endp
 
 end main
